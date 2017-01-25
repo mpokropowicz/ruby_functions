@@ -9,4 +9,11 @@ class TestFucntionAddition < Minitest::Test
 
 		assert_equal(2, results)
 	end	
+
+	def test_5_plus_12_returns_17
+
+		results = addition(5, 12)
+
+		assert_equal(17, results)
+	end
 end
