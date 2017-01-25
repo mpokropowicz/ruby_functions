@@ -16,4 +16,11 @@ class TestFucntionAddition < Minitest::Test
 
 		assert_equal(17, results)
 	end
+
+	def test_pi_plus_1_returns_
+
+		results = addition(3.14, 1)
+
+		assert_equal(4.14, results.round(2))
+	end
 end
