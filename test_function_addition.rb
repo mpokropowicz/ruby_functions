@@ -24,13 +24,20 @@ class TestFucntionAddition < Minitest::Test
 		assert_equal(4.14, results.round(2))
 	end
 
-	def test_String_plus_Numeric
+	# def test_String_plus_Numeric
 
-		assert_equal(false, addition("2", 1))
-	end
+	# 	assert_equal(false, addition("2", 1))
+	# end
 
 	def test_String_plus_String
 
-		assert_equal("MaxPokropowicz", addition("Max", "Pokropowicz"))
+		assert_equal("MaxPaulPokropowicz", addition("Max", "Paul", "Pokropowicz"))
+	end
+
+	def test_one_plus_one_plus_one_returns_3
+
+		results = addition(1, 1, 1)
+
+		assert_equal(3, results)
 	end
 end
