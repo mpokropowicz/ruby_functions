@@ -16,4 +16,11 @@ class TestFunctionsSubtraction < Minitest::Test
 
 		assert_equal(4, results)
 	end
+
+	def test_String_minus_String
+
+		results = subtraction("Hello", "Bob")
+
+		assert_equal(false, results)
+	end
 end
