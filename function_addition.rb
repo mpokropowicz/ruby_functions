@@ -1,5 +1,14 @@
 def addition(num1, num2, *nums)
 
+
+	#all paramaters MUST be of Type String OR Numeric
+	unless (num1.is_a? Numeric) && (num2.is_a? Numeric) &&
+		    nums.all? {|n| n.is_a? Numeric} ||
+	   	   (num1.class == String && num2.class == String && 
+	   	    nums.all? {|n| n.class == String})
+		return false
+	end
+
 	if num1.class == String && num2.class == String ||
 	   (num1.class == String && num2.class == String && 
 	   	nums.all? {|n| n.class == String})
@@ -24,5 +33,3 @@ def addition(num1, num2, *nums)
 	    result = result + num1 + num2
 	end
 end
-
-addition("M","P","Z")

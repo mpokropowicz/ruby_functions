@@ -24,11 +24,6 @@ class TestFucntionAddition < Minitest::Test
 		assert_equal(4.14, results.round(2))
 	end
 
-	# def test_String_plus_Numeric
-
-	# 	assert_equal(false, addition("2", 1))
-	# end
-
 	def test_String_plus_String
 
 		assert_equal("MaxPaulPokropowicz", addition("Max", "Paul", "Pokropowicz"))
@@ -39,5 +34,12 @@ class TestFucntionAddition < Minitest::Test
 		results = addition(1, 1, 1)
 
 		assert_equal(3, results)
+	end
+
+	def test_Mixed_String_and_Int_returns_false
+
+		results = addition("1",1,1,1)
+
+		assert_equal(false, results)
 	end
 end
