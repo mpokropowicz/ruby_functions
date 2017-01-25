@@ -9,4 +9,11 @@ class TestFunctionsSubtraction < Minitest::Test
 
 		assert_equal(0, results)
 	end
+
+	def test_three_minus_negative1_returns_four
+
+		results = subtraction(3, -1)
+
+		assert_equal(4, results)
+	end
 end
