@@ -16,4 +16,11 @@ class TestFunctionMultiplication < Minitest::Test
 
 		assert_equal(200, results)
 	end
+
+	def test_String_times_Numeric
+
+		results = multiplication("h", 3)
+
+		assert_equal("hhh", results)
+	end
 end
