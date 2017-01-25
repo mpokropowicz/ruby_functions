@@ -19,8 +19,18 @@ class TestFucntionAddition < Minitest::Test
 
 	def test_pi_plus_1_returns_
 
-		results = addition(3.14, 1)
+		results = addition(3.14, 1.0)
 
 		assert_equal(4.14, results.round(2))
+	end
+
+	def test_String_plus_Numeric
+
+		assert_equal(false, addition("2", 1))
+	end
+
+	def test_String_plus_String
+
+		assert_equal("MaxPokropowicz", addition("Max", "Pokropowicz"))
 	end
 end
