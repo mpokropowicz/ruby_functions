@@ -3,8 +3,10 @@ require_relative "function_addition.rb"
 
 class TestFucntionAddition < Minitest::Test
 
-	def test_one_equals_one
+	def test_one_plus_one_returns_2
 
-		assert_equal(1,1)
-	end
+		results = addition(1, 1)
+
+		assert_equal(2, results)
+	end	
 end
