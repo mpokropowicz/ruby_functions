@@ -23,4 +23,11 @@ class TestFunctionMultiplication < Minitest::Test
 
 		assert_equal("hhh", results)
 	end
+
+	def test_many_inputs
+
+		results = multiplication(1,4,5,7,10,3)
+
+		assert_equal(4200, results)
+	end
 end
