@@ -7,4 +7,9 @@ class TestFunctionDivision < Minitest::Test
 
 		assert_equal(0, division(0, 1))
 	end
+
+	def test_10_by_5_by_2_returns_1
+
+		assert_equal(1, division(10, 5, 2))
+	end
 end
