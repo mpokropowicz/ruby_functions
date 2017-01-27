@@ -17,4 +17,9 @@ class TestFunctionDivision < Minitest::Test
 
 		assert_equal(false, division(1, 0))
 	end
+
+	def test_divide_by_string
+
+		assert_equal(false, division("10", 2))
+	end
 end
