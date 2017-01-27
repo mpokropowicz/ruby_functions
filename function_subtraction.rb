@@ -1,10 +1,17 @@
-def subtraction(num1, num2)
+def subtraction(num1, num2, *nums)
 
-	if (num1.is_a? Numeric) && (num2.is_a? Numeric)
+	if (num1.is_a? Numeric) && (num2.is_a? Numeric) && nums.all? {|e| e.is_a? Numeric}
 
-		num1 - num2
+		result = num1 - num2
+
+		nums.each do |n|
+
+			result -= n
+		end
 	else
 
 		return false
 	end
+
+	result
 end
