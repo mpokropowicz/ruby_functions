@@ -26,14 +26,14 @@ class TestFucntionAddition < Minitest::Test
 
 	def test_String_plus_String
 
-		assert_equal("MaxPaulPokropowicz", addition("Max", "Paul", "Pokropowicz"))
+		assert_equal("MaxPokropowiczPaul", addition("Max","Pokropowicz", "Paul",))
 	end
 
 	def test_one_plus_one_plus_one_returns_3
 
-		results = addition(1, 1, 1)
+		results = addition(1, 5, 7)
 
-		assert_equal(3, results)
+		assert_equal(13, results)
 	end
 
 	def test_Mixed_String_and_Int_returns_false
