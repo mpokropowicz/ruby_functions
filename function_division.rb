@@ -1,4 +1,11 @@
-def division(num1, num2)
+def division(num1, num2, *nums)
 
-	num1 / num2
+	result = num1 / num2
+
+	nums.each do |n|
+
+		result /= n
+	end
+
+	result
 end
