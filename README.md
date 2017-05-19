@@ -1,1 +1,2 @@
-# ruby_functions
+# Ruby Functions
+An introduction to functions in Ruby.
